@@ -1,0 +1,12 @@
+.no-padding{
+  padding:0px !important;
+}
+
+.cred{
+  background: #d9534f !important;
+  color: #fff !important;
+}
+
+#dataTables-example_filter{
+  display :none !important;
+}
