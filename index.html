@@ -20,6 +20,8 @@
     <!-- Custom CSS -->
     <link href="dist/css/sb-admin-2.css" rel="stylesheet">
 
+    <link href="assets/telkom-bges/telkom-bges.css" rel="stylesheet">
+
     <!-- Custom Fonts -->
     <link href="bower_components/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
 
@@ -32,32 +34,36 @@
 
 </head>
 
-<body>
+<body class='full-bg'>
 
     <div class="container">
         <div class="row">
             <div class="col-md-4 col-md-offset-4">
-                <div class="login-panel panel panel-default">
-                    <div class="panel-heading">
+                <div class="login-panel panel " style='background: rgba(0,0,0,0)'>
+                    <!-- <div class="panel-heading">
                         <h3 class="panel-title">Please Sign In</h3>
-                    </div>
+                    </div> -->
                     <div class="panel-body">
                         <form role="form">
                             <fieldset>
+                                <div class='telkom-logo'></div>
                                 <div class="form-group">
                                     <input class="form-control" placeholder="NIK" name="nik" type="text" autofocus>
                                 </div>
                                 <div class="form-group">
                                     <input class="form-control" placeholder="Password" name="password" type="password" value="">
                                 </div>
-                                <!-- Change this to a button or input when using this as a form -->
-                                <a href="app/index.html" class="btn btn-lg btn-success btn-block">Login</a>
+                                <a href="app/index.html" class="btn btn-success btn-block">Sign In</a>
                             </fieldset>
                         </form>
                     </div>
                 </div>
             </div>
         </div>
+    </div>
+
+    <div class='bottom'>
+      Telkom Indonesia Witel Kalsel
     </div>
 
     <!-- jQuery -->

@@ -10,3 +10,30 @@
 #dataTables-example_filter{
   display :none !important;
 }
+
+.full-bg{
+  background: url('../img/CityLandscape.jpg') !important;
+  background-size: 100%;
+  background-position: center;
+}
+
+.telkom-logo {
+    background: url("../img/logo-telkom-white.png");
+    height: 200px;
+    width: 100%;
+    margin: auto;
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin-bottom: 20px;
+    background-position: center;
+}
+
+.bottom {
+    color: #fff;
+    text-align: center;
+    border-top: 1px solid rgba(255,255,255,0.7);
+    padding: 10px;
+    bottom: 0;
+    position: absolute;
+    width: 100%;
+}
