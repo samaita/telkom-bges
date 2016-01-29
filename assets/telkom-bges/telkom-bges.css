@@ -37,3 +37,21 @@
     position: absolute;
     width: 100%;
 }
+
+.navbar-telkom{
+  background: url('../img/CityLandscape-mini.jpg') !important;
+  background-size: cover;
+}
+
+#page-wrapper {
+    background: url('../img/bg-telkom.png') !important;
+    background-size: cover;
+}
+
+li.dropdown a.dropdown-toggle{
+  color: #fff !important;
+}
+
+li.dropdown a.dropdown-toggle:hover, li.dropdown a.dropdown-toggle:focus, .nav .open>a, .nav .open>a:focus, .nav .open>a:hover{
+  background: rgba(0,0,0,0.1) !important;
+}
