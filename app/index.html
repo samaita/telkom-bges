@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -44,6 +45,10 @@
 
 <body>
 
+  <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+
+  </div>
+
     <div id="wrapper">
 
         <!-- Navigation -->
@@ -71,7 +76,7 @@
                         <li><a href="#"><i class="fa fa-gear fa-fw"></i> Settings</a>
                         </li>
                         <li class="divider"></li>
-                        <li><a href="../index.html"><i class="fa fa-sign-out fa-fw"></i> Logout</a>
+                        <li><a href='#' onclick="signOut()"><i class="fa fa-sign-out fa-fw"></i> Logout</a>
                         </li>
                     </ul>
                     <!-- /.dropdown-user -->
@@ -487,7 +492,7 @@
 
     <!-- DatePick -->
     <script src="../assets/datepick/js/bootstrap-datepicker.min.js"></script>
-
+    <script src="../assets/telkom-bges/telkom-bges.js"></script>
     <script>
 
     function filterColumn ( i ) {
@@ -526,7 +531,20 @@
       ).draw();
     }
 
+    function signedIn(){
+      if(localStorage.getItem('username') == null || localStorage.getItem('username') == ''){
+        //destroySession();
+        window.location.assign('../index.html');
+      }else{
+        $('.username').html(localStorage.getItem('username') + '!');
+        $('#myModal').modal('hide');
+      }
+    }
+
     $(document).ready(function() {
+      $('#myModal').modal();
+      signedIn();
+
         $('#dataTables-example').DataTable({
             "info": false,
         });
